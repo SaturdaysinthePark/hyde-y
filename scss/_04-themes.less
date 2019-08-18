@@ -4,9 +4,8 @@
   text-decoration: none;
 
   &:hover {
-    background-color: @primary-background;
-    color: @secondary-background;
-    text-decoration: none;
+    color: @base-color-link;
+    text-decoration: underline;
   }
 
   &.active {
@@ -84,15 +83,15 @@
       color: @base-background;
 
       &:hover {
-        background-color: @secondary-color;
-        color: @base-color;
+        color: @white-links;
+        text-decoration: underline;
       }
     }
   }
 
   &> .main_content .label:not(a) {
     padding: 2px;
-    background-color: @primary-background;
+    background-color: @secondary-background;
     color: @secondary-background;
   }
 
