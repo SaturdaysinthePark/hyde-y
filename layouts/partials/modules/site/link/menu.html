@@ -1,3 +1,18 @@
 {{ range .Site.Data.Menu }}
 <a href="{{ .URL | absURL }}"{{ if and ( isset . "Title" ) ( ne .Title "" ) }} title="{{ .Title }}"{{ end }}>{{ .Name }}</a>
 {{ end }}
+<div class="nav primary">
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("navmenu");
+        if (x.className === "container nav primary no-print") {
+        x.className += " responsive";
+        } else {
+        x.className = "container nav primary no-print";
+        }
+    }
+</script>

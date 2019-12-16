@@ -31,8 +31,25 @@
     padding-bottom: @large-plus-value;
 
     @media @mq-small {
-      padding-top: @extra-large-value;
-      padding-bottom: @extra-large-value;
+      padding-top: @medium-value;
+      padding-bottom: @medium-value;
+      .nav a:not(:first-child) {display:none;}
+      .nav a.icon{
+        float: bottom;
+        display: block;
+      }
+      .nav.responsive {position: sticky;}
+      .nav.responsive a.icon {
+        position: sticky;
+        right: 0;
+        top: 0;
+      }
+      .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        position: sticky;
+      }
     }
 
     @media @mq-medium {
