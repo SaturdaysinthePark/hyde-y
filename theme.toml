@@ -15,3 +15,5 @@ min_version = 0.14
     author =  "Andrei Mihu"
     homepage = "https://github.com/zyro/hyde-x"
     repo = "https://github.com/zyro/hyde-x"
+
+    pluralizelisttitles = false

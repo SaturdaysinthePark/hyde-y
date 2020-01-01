@@ -5,7 +5,7 @@
     {{ partial "bloc/content/lastupdate" . }}
   </header>
 <p></p>
-  <h1>my latest book review:</h1>
+  <h1>My latest blog posts:</h1>
 <p></p>
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
   {{ range $paginator.Pages }}
